@@ -177,7 +177,11 @@ public class MaintenanceController {
             msg.setLocation(500, 500);
             return;
         }
-
+        //To re-initiate Collected cash and total cash fields
+        /*Bug fix #2 starts*/
+        mpanel.initCollectCash();
+        mpanel.initTotalCash();
+        /*Bug fix #2 ends*/
         mpanel.setActive(MaintenancePanel.DIALOG, true);
 
     }
